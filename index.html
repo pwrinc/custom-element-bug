@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<script src="custom-elements-es5-adapter.js"></script>-->
+    <script src="native-shim.js"></script>
+    <script src="webcomponents-lite.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+<my-element value="test"></my-element>
+<my-second-element value="test"></my-second-element>
+<script>
+    var elem = document.querySelector('my-element');
+    elem.setAttribute('value','Foo');
+
+    var elem2 = document.querySelector('my-second-element');
+    elem2.setAttribute('value','Bar');
+</script>
+</body>
+</html>
